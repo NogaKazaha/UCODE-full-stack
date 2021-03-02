@@ -1,0 +1,52 @@
+#capitan_america {
+  background: linear-gradient(180deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 100%);
+}
+
+#iron_man {
+  background: linear-gradient(180deg, rgba(229,45,39,1) 0%, rgba(179,18,23,1) 100%);
+}
+
+#black_widow {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(97,4,95,1) 100%);
+}
+
+#spider_man {
+  background: linear-gradient(180deg, rgba(229,45,39,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#img_spider {
+  bottom: 57px;
+}
+
+img {
+  height: 182px;
+  position: relative;
+  bottom: 101px;
+}
+
+div {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.card {
+  height: 140px;
+  width: 270px;
+  border-radius: 5px;
+  font-family: Verdana, Tahoma, sans-serif;
+  display: inline-block;
+  margin: 35px;
+  padding: 0px 10px 0px 10px;
+}
+
+.alias {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+}
+
+.realname {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 9px;
+  text-align: right;
+}
