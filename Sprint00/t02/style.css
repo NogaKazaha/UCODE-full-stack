@@ -1,0 +1,26 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+}
+
+input {
+  color: green;
+  padding: 0px, 10px, 0px, 10px;
+  height: 2em;
+}
+
+button {
+  color: green;
+  padding: 0px, 10px, 0px, 10px;
+  height: 2em;
+  width: fit-content;
+  font-size: 14px;
+}
+
+input:hover {
+  color: red;
+}
+
+button:hover {
+  color: red;
+}
