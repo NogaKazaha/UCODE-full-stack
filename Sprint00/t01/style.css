@@ -1,0 +1,47 @@
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 20px;
+}
+
+table {
+  text-align: center;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+
+th {
+  color: white;
+  background-color: black;
+  border:  none;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+#Soul_Stone {
+  background-color: orange;
+}
+
+#Time_Stone {
+  background-color: green;
+}
+
+#Space_Stone {
+  background-color: rgb(61, 61, 253);
+}
+
+#Mind_Stone {
+  background-color: yellow;
+}
+
+#Reality_Stone {
+  background-color: red;
+}
+
+#Power_Stone {
+  background-color: rgb(172, 2, 172)
+}
