@@ -1,0 +1,16 @@
+form {
+  border: 2px solid gray;
+  padding: 20px;
+}
+
+fieldset {
+  border: 1px solid black;
+}
+
+legend {
+  margin: 10px;
+}
+
+body {
+  font-weight: bold;
+}

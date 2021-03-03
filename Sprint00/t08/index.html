@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Superhero Form</h1>
+    <form action="#">
+      <fieldset> 
+        <legend>About the Superhero</legend>
+        <br />
+        <label>Real name</label>
+        <input type="text" placeholder="Superhero real name" required autofocus>
+        <label>Superhero name</label>
+        <input type="text" placeholder="Superhero alias" required autofocus>
+        <label>Age</label>
+        <input type="number" min="1" max="999" step="1" required autofocus>
+        <br /> <br />
+        <label>About</label>
+        <textarea type="text" cols="70" rows="5" placeholder="Information about the superhero, max 500 symbols"></textarea>
+        <br /> <br />
+        <label>Photo</label>
+        <input type="file" accept="image/jpeg, image/png, image/gif"> 
+        <br /> <br />
+      </fieldset>
+      <fieldset>
+        <legend>Powers</legend>
+        <br />
+        <input type="checkbox">
+        <label>Telekinesis</label>
+        <input type="checkbox">
+        <label>Super strength or speed</label>
+        <input type="checkbox">
+        <label>Shapeshifting</label>
+        <input type="checkbox">
+        <label>Flight</label>
+        <input type="checkbox">
+        <label>Elemental control</label>
+        <input type="checkbox">
+        <label>Other</label>
+        <br /> <br />
+        <label>Level of control:</label>
+        <input type="range">
+        <br /> <br />
+      </fieldset>
+      <fieldset>
+        <legend>Origin of Powers</legend>
+        <br />
+        <input type="radio">
+        <lable>Unknown</lable>
+        <input type="radio">
+        <lable>Freak lab accident</lable>
+        <input type="radio">
+        <lable>Chosen by an ancient wise being</lable>
+        <input type="radio">
+        <lable>The superhero is not human</lable>
+        <input type="radio">
+        <lable>Other</lable>
+        <br /> <br />
+      </fieldset>
+      <br />
+      <input type="reset" value="CLEAR">
+      <input type="submit" value="SEND">
+      <br /> <br />
+    </form>
+  </body>
+</html>
