@@ -6,7 +6,7 @@ img {
 table {
   text-align: center;
   position: relative;
-  border-spacing: 5px;
+  border-spacing: 5px 0px;
 }
 
 thead {
