@@ -22,7 +22,7 @@
         <tr>
             <th>Sprint00</th>
             <th>The basics of HTML and CSS (tags, position, colors, tables, etc.)</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint01</th>
