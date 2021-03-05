@@ -1,0 +1,12 @@
+img:hover {
+  transform: rotate(-30deg);
+}
+
+img {
+  margin-top: 7rem;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+}
