@@ -1,0 +1,19 @@
+.infinity-gauntlet {
+  padding: 20px;
+  height: 300px;
+}
+
+.man {
+  padding: 5px;
+  height: 70px;
+}
+
+.infinity-gauntlet:hover + table .first-row td:nth-child(2n + 1) {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.infinity-gauntlet:hover + table .second-row td:nth-child(2n) {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
