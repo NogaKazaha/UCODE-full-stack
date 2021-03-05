@@ -1,0 +1,21 @@
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 1000%;
+  background-color: green;
+  animation-duration: 4s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 2s ease;
+}
+
+.circle:hover {
+  background-color: red;
+}
+
+@keyframes move {
+  from {
+    margin-left: calc(100% - 100px);
+  }
+}
