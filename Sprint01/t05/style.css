@@ -1,0 +1,25 @@
+button {
+  float: right;
+  background-color: lightgrey;
+}
+
+input::placeholder {
+  color: lightgreen;
+}
+
+.search-field {
+  color: green;
+  border-color: lightgray;
+  height: 2em;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.search-engine {
+  display: flex;
+}
+
+.search-field:hover, button:hover{
+  color:red;
+}
+
