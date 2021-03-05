@@ -1,0 +1,16 @@
+p {
+  font-size: 20px;
+  clear: right;
+}
+
+@media print {
+  p {
+    float: left;
+  }
+}
+
+.superhero {
+  width: 400px;
+  float: left;
+  margin: 10px;
+}
