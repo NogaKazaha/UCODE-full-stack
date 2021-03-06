@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Handbook</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Contents of the web page</h1>
+    <div class="container">
+      <div class="block">
+        <ul>
+          <li>
+            <a href="#html">HTML</a>
+            <ul>
+              <li><a href="#div">div</a></li>
+              <li><a href="#h1">h1</a></li>
+              <li><a href="#footer">footer</a></li>
+              <li><a href="#main">main</a></li>
+              <li><a href="#p">p</a></li>
+              <li><a href="#br">br</a></li>
+              <li><a href="#a">a</a></li>
+              <li><a href="#img">img</a></li>
+              <li><a href="#form">form</a></li>
+              <li><a href="#table">table</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#css">CSS</a>
+            <ul>
+              <li><a href="#selectors">Selectors</a></li>
+              <li><a href="#classes">Classes</a></li>
+              <li><a href="#id">ID</a></li>
+              <li><a href="#background-color">background-color</a></li>
+              <li><a href="#border">border</a></li>
+              <li><a href="#border-radius">border-radius</a></li>
+              <li><a href="#font-size">font-size</a></li>
+              <li><a href="#font-family">font-family</a></li>
+              <li><a href="#padding">padding</a></li>
+              <li><a href="#margin">margin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#protocols">Protocols</a>
+            <ul>
+              <li><a href="#description">Description</a></li>
+              <li><a href="#https">HTTP/HTTPS</a></li>
+              <li><a href="#dns">DNS</a></li>
+              <li><a href="#ip">IP</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1 id="html">HTML</h1>
+    <div class="container">
+      <div class="block">
+        <p>
+          <span class="block-text" id="div"> div</span><br />
+          <br />
+          Defines a division or a section in an HTML document
+          <br />align,title<br />
+          <br />
+          <span>&lt;div&gt;...&lt;/div&gt;</span>
+        </p>
+        <div class="example-div">Lorem, ipsum.</div>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="h1"> h1 </span>
+          <br /> <br />
+          The h1 to h6 tags are used to define HTML headings <br />
+          align 
+          <br /> <br />
+          <span> &lt;h1&gt;Title&lt;/h1&gt;</span>
+        </p>
+        <h1 class="example-h1">Title</h1>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="footer"> footer</span> <br />
+          <br />
+          Specifies the trailing are (footer) of a document or section <br />
+          --- <br />
+          <span>&lt;footer&gt;content&lt;/footer&gt;</span>
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="main"> main</span> <br />
+          <br />
+          Specifies the main content of a document br<br />---
+          <span><br />&lt;main&gt;content&lt;/main&gt;</span>
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="p"> p</span> <br />
+          <br />
+          The &lt;p&gt tag defines a paragraph. <br /> <br />
+          Browsers automatically add a single blank line before and after each <br /><br />
+          &lt;p&gtHere is some paragraph&lt/p&gt
+          <p>Here is some paragraph</p>
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="br">br</span>
+          <br /><br />
+          This tag represents a line break. It's an inline element, and does not need a closing tag.
+          <br />
+          We use it to create a new line inside a p tag, without creating a new
+          paragraph
+          <br />
+          And compared to creating a new paragraph, it does not add additional
+          spacing. 
+          <br /> <br />
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="a">a</span>
+          <br />
+          <br />
+          The a tag defines a hyperlink, which is used to
+          link from one page to another. The most important attribute of the
+          a element is the href attribute, which indicates the
+          link's destination 
+          <br /> <br />
+          <span
+            >&lta&gt href="https://lms.ucode.world/"> Visit
+            W3Schools.com!&lt/a&gt</span
+          >
+        </p>
+        <a href="https://lms.ucode.world/">Visit lms.ucode.world!</a>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="img"> img</span> 
+          <br /> <br />
+          The img tag is used to embed an image in an HTML
+          page. Images are not technically inserted into a web page; images are
+          linked to web pages. The img tag creates a holding space
+          for the referenced image. 
+          <br /> <br />
+          <span>
+              &lt;img src="assets/images/t04.jpg"
+            alt="Picture Example" width="50%"&gt <br /><br
+          /></span>
+          <img
+            src="assets/images/t04.jpg"
+            alt="Example"
+            width="50%"
+          />
+          <br />
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="form"> form</span> <br />
+          <br />
+          The &lt;form&gt tag is used to create an HTML form for user input. <br /> <br />
+          The &lt;form&gt element can contain one or more of the following form elements:
+          <ul>
+            <li>&lt;input&gt</li>
+            <li>&lt;textarea&gt</li>
+            <li>&lt;button&gt</li>
+            <li>&lt;select&gt</li>
+            <li>&lt;option&gt</li>
+            <li>&lt;optgroup&gt</li>
+            <li>&lt;fieldset&gt</li>
+            <li>&lt;label&gt</li>
+            <li>&lt;output&gt</li>
+          </ul>
+        </p>
+      </div>
+      <div class="block" id="css">
+        <p>
+          <span class="block-text" id="table"> table</span> <br />
+          <br />
+          The &lttable&gt tag defines an HTML table. <br />
+          An HTML table consists of one &lttable&gt element and one or more
+          &lttr&gt, &ltth&gt, and
+          &lttd&gt elements.The &lttr&gt element
+          defines a table row, the &ltth&gt element defines a table header, and
+          the &lttd&gt element defines a table cell. 
+          <br /> <br />
+          <span>
+            &lttable&gt <br />
+            &lttr&gt <br />
+            &ltth&gtMonth&lt/th&gt <br />
+            &ltth&gtSavings&ltth&gt <br />
+            &lt/tr&gt <br />
+            &lt/table&gt <br
+          /></span>
+        </p>
+
+        <table>
+          <tr>
+            <td>Month</td>
+            <td>Savings</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h1>CSS</h1>
+    <div class="container">
+      <div class="block">
+        <p>
+          <span class="block-text" id="selectors">Selectors</span>
+        </p>
+        <p>
+          For example if you have a p element on the page, and you want to
+          change it's color to green. You can target that
+          element using this selector p. A simple CSS rule to
+          achieve what you want is: <br />
+          <br />
+          <span>
+            p { <br />
+            color: green; <br />
+            } <br />
+            <br />
+            <p style="color: green;">Green text</p>
+          </span>
+        </p>
+      </div>
+      <div class="block">
+        <p>
+          <span class="block-text" id="classes">Classes</span>
+        </p>
+        <p>
+          HTML elements have 2 attributes which are very commonly used within
+          CSS to associate styling to a specific element on the page: class and
+          id.
+          <br />
+          Classes are identified using the . symbol 
+          <br />
+          Example using a class: 
+          <br /> <br />
+            &ltp class="name"> <br />
+            Oleg <br />
+            &lt/p> <br />
+            <br />
+
+            .name { <br />
+            color: green; <br />
+            } <br />
+            <br />
+            <p class="name">
+              Oleg
+            </p>
+            <style>
+              .name {
+                color: green;
+              }
+            </style>
+        </p>
+      </div>
+      <div class="block">
+        <p><span class="block-text" id="id">ID</span></p>
+        <p>
+          The #id selector styles the element with the specified id. <br />
+          Example: style the element with id="firstname": <br />
+          <br />
+          <span>
+            &ltp id="firstname"> <br />
+            Brown <br />
+            &lt/p> <br />
+            <br />#firstname {<br />
+
+            background-color: green;
+            <br />
+            }</span
+          ><br /><br />
+        </p>
+
+        <p id="firstname">Brown</p>
+
+        <style>
+          #firstname {
+            color: green;
+          }
+        </style>
+      </div>
+      <div class="block bck">
+        <p class="block-text" id="background-color">background-color</p>
+        <p>
+          The background-color property sets the background color of an element.
+          The background of an element is the total size of the element,
+          including padding and border (but not the margin). <br /><br />
+          body {<br />background-color: rgb(1, 255, 1);<br />}
+        </p>
+        <style>
+          .bck {
+            background-color: rgb(1, 255, 1);
+          }
+        </style>
+      </div>
+      <div class="block">
+        <p class="block-text" id="border">border</p>
+        <p>the border property is a shorthand property for:</p>
+        <ul>
+          <li>border-width</li>
+          <li>border-style (required)</li>
+          <li>border-color</li>
+        </ul>
+        If border-color is omitted, the color applied will be the color of the
+        text. <br /><br />
+        .example {<br />border: 1px solid black;<br />}
+        <div
+          class="example"
+          style="width: 50px; height: 50px; border: 1px solid black; margin: 5px;"
+        ></div>
+      </div>
+      <div class="block">
+        <p class="block-text" id="border-radius">border-radius</p>
+        <p>
+          The border-radius property defines the radius of the element's
+          corners. <br />
+          <br />
+          .example {<br />border: 2px solid red; border-radius: 10px;<br />}
+        </p>
+        <div
+          class="example-1"
+          style="
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            border-radius: 10px;
+          "
+        ></div>
+      </div>
+      <div class="block">
+        <p class="block-text" id="font-size">font-size</p>
+        <p>
+          The font-size property sets the size of a font. <br />
+          <br />
+          .example {<br />font-size: 40px;<br />}
+        </p>
+
+        <div class="example-2" style="font-size: 40px;">Text</div>
+      </div>
+      <div class="block">
+        <p class="block-text" id="font-family">font-family</p>
+        <p>
+          The font-family property specifies the font for an
+          element. <br />
+          <br />
+
+          The font-family property can hold several font names as
+          a "fallback" system. If the browser does not support the first font,
+          it tries the next font. <br />
+          <br />
+
+          There are two types of font family names:
+        </p>
+
+        <ul>
+          <li>
+            family-name - The name of a font-family, like "times", "courier",
+            "arial", etc.
+          </li>
+          <li>
+            generic-family - The name of a generic-family, like "serif",
+            "sans-serif", "cursive", "fantasy", "monospace".
+          </li>
+        </ul>
+        Start with the font you want, and always end with a generic family, to
+        let the browser pick a similar font in the generic family, if no other
+        fonts are available. <br />
+        <br />
+          .example: Arial, Helvetica, sans-serif; <br />
+        <br />
+        <div
+          class="example"
+          style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;"
+        >
+          Text
+        </div>
+      </div>
+      <div class="block">
+        <p class="block-text" id="padding">padding</p>
+        <p>
+          An element's padding is the space between its content and
+          its border.
+          <br />
+        </p>
+        <ul>
+          <li>padding-top</li>
+          <li>padding-right</li>
+          <li>padding-bottom</li>
+          <li>padding-left</li>
+        </ul>
+        <p>
+          <strong>Note: </strong> Padding creates extra space within an element,
+          while margin creates extra space around an element. This property can
+          have from one to four values. The padding property is a
+          shorthand property for:
+        </p>
+        <p>
+          .example {<br />padding: 35px;<br />}
+        </p>
+        <div
+          class="example"
+          style="background-color: black; padding: 35px;"
+        ></div>
+      </div>
+      <div class="block">
+        <p class="block-text" id="margin">margin</p>
+        <p>
+          The margin property sets the margins for an element, and
+          is a shorthand property for the following properties:
+        </p>
+        <ul>
+          <li>margin-top</li>
+          <li>margin-right</li>
+          <li>margin-bottom</li>
+          <li>margin-left</li>
+        </ul>
+        <p>
+          .example{<br />margin: 35px;<br />}
+        </p>
+        <div
+          class="example"
+          style="background-color: aquamarine; margin: 35px;"
+        >
+          Some content
+        </div>
+      </div>
+    </div>
+    <h1 id="protocols">Protocols</h1>
+    <div class="container">
+      <div class="block">
+        <p class="block-text" id="description">Description</p>
+        <p>
+          A protocol is a set of rules and guidelines for communicating data.
+          Rules are defined for each step and process during communication
+          between two or more computers. Networks have to follow these rules to
+          successfully transmit data. 
+          <br /><br />
+          Similar to programming
+          languages, protocols are based on specific rules and regulations for
+          computing and are designed for efficiency. Each rule is defined in
+          different terms and is assigned a unique name. Protocols specify the
+          standards for communication and provide detailed information on
+          processes involved in data transmission. Such processes include:
+        </p>
+        <ul>
+          <li>Type of task</li>
+          <li>Process nature</li>
+          <li>Data flow rate</li>
+          <li>Data type</li>
+          <li>Device management</li>
+        </ul>
+        <p>
+          A single process can be handled by more than one protocol
+          simultaneously. This coordination of protocols creates a protocol
+          family.
+        </p>
+      </div>
+      <div class="block">
+        <p class="block-text" id="https">HTTP/HTTPS</p>
+        <p>
+          The Hypertext Transfer Protocol (HTTP) is the foundation of the World
+          Wide Web, and is used to load web pages using hypertext links. HTTP is
+          an application layer protocol designed to transfer information between
+          networked devices and runs on top of other layers of the network
+          protocol stack. A typical flow over HTTP involves a client machine
+          making a request to a server, which then sends a response message.
+          <br />
+          <br />
+          Hypertext transfer protocol secure (HTTPS) is the secure version of
+          HTTP, which is the primary protocol used to send data between a web
+          browser and a website. HTTPS is encrypted in order to increase
+          security of data transfer. This is particularly important when users
+          transmit sensitive data, such as by logging into a bank account, email
+          service, or health insurance provider. <br />
+          <br />Status codes are issued by a server in response to a client's
+          request made to the server. It includes codes from IETF Request for
+          Comments (RFCs), other specifications, and some additional codes used
+          in some common applications of the HTTP. <br />
+          <br />There are five classes defined by the standard:
+        </p>
+
+        <ul>
+          <li>
+            1xx informational response – the request was received, continuing
+            process
+          </li>
+          <li>
+            2xx successful – the request was successfully received, understood,
+            and accepted
+          </li>
+          <li>
+            3xx redirection – further action needs to be taken in order to
+            complete the request
+          </li>
+          <li>
+            4xx client error – the request contains bad syntax or cannot be
+            fulfilled
+          </li>
+          <li>
+            5xx server error – the server failed to fulfil an apparently valid
+            request
+          </li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="block-text" id="dns">DNS</p>
+        <p>
+          DNS is a global system for translating IP addresses to human-readable
+          domain names. When a user tries to access a web address like
+          “example.com”, their web browser or application performs a DNS Query
+          against a DNS server, supplying the hostname. The DNS server takes the
+          hostname and resolves it into a numeric IP address, which the web
+          browser can connect to.
+          <br /><br />
+          A component called a DNS Resolver is responsible for checking if the
+          hostname is available in local cache, and if not, contacts a series of
+          DNS Name Servers, until eventually it receives the IP of the service
+          the user is trying to reach, and returns it to the browser or
+          application. This usually takes less than a second. <br />
+          <br />
+          DNS servers create a DNS record to provide important information about
+          a domain or hostname, particularly its current IP address. The most
+          common DNS record types are:
+        </p>
+
+        <ul>
+          <li>
+            Address Mapping record (A Record)—also known as a DNS host record,
+            stores a hostname and its corresponding IPv4 address.
+          </li>
+          <li>
+            IP Version 6 Address record (AAAA Record)—stores a hostname and its
+            corresponding IPv6 address.
+          </li>
+          <li>
+            Canonical Name record (CNAME Record)—can be used to alias a hostname
+            to another hostname. When a DNS client requests a record that
+            contains a CNAME, which points to another hostname, the DNS
+            resolution process is repeated with the new hostname.
+          </li>
+          <li>
+            Mail exchanger record (MX Record)—specifies an SMTP email server for
+            the domain, used to route outgoing emails to an email server.
+          </li>
+          <li>
+            Name Server records (NS Record)—specifies that a DNS Zone, such as
+            “example.com” is delegated to a specific Authoritative Name Server,
+            and provides the address of the name server.
+          </li>
+          <li>
+            Reverse-lookup Pointer records (PTR Record)—allows a DNS resolver to
+            provide an IP address and receive a hostname (reverse DNS lookup).
+          </li>
+          <li>
+            Certificate record (CERT Record)—stores encryption
+            certificates—PKIX, SPKI, PGP, and so on.
+          </li>
+          <li>
+            Service Location (SRV Record)—a service location record, like MX but
+            for other communication protocols.
+          </li>
+          <li>
+            Text Record (TXT Record)—typically carries machine-readable data
+            such as opportunistic encryption, sender policy framework, DKIM,
+            DMARC, etc.
+          </li>
+          <li>
+            Start of Authority (SOA Record)—this record appears at the beginning
+            of a DNS zone file, and indicates the Authoritative Name Server for
+            the current DNS zone, contact details for the domain administrator,
+            domain serial number, and information on how frequently DNS
+            information for this zone should be refreshed.
+          </li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="block-text" id="ip">IP</p>
+        <p>
+          An Internet Protocol address (IP address) is a numerical label
+          assigned to each device connected to a computer network that uses the
+          Internet Protocol for communication. An IP address serves two main
+          functions: host or network interface identification and location
+          addressing. <br> <br>If you know how to access your command line or terminal emulator, you can use the ping command to identify IP address. <br> <br> <ol>
+
+          <li> At the prompt, type ping, press the spacebar, and then type the relevant domain name or the server hostname.</li> <br>
+          
+          <li> Press Enter.</li></ol>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
