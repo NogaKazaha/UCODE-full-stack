@@ -1,5 +1,3 @@
-
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.5s ease;
@@ -47,8 +45,6 @@ header {
   color: white;
   box-shadow: 1px 5px 10px -5px black;
 }
-/* sub-menu */
-
 .dropdown-menu li ul {
   position: absolute;
   list-style: none;
