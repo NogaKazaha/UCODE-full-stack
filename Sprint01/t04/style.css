@@ -63,4 +63,7 @@ td {
   .block {
     width: calc(25% - 25px);
   }
+  .example-h1 {
+    font-size: 40px;
+  }
 }
