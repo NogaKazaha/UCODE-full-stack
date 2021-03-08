@@ -7,7 +7,7 @@ if (animalName.length <= 20 && !animalName.includes(" ") && animalName !== "") {
   gender = prompt("Is the superhero male or female? Leave blank if unknown or other.");
     if (gender === "male" || gender === "female" || gender === "") {
       age = prompt("How old is the superhero?");
-        if (age.length <=5 && age > 0) {
+        if (age.length <= 5 && age > 0) {
           if (gender.match(/male/gmi) && age < 18) {
             status = "boy";
           }
