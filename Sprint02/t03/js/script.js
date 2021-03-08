@@ -1,4 +1,4 @@
-const x = Number(prompt ('Enter number from 1 to 10'));
+const x = Number(prompt('Enter number from 1 to 10'));
 
 switch (x){
   case 1 : 
