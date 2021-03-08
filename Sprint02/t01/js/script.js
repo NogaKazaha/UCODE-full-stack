@@ -20,3 +20,4 @@ alert ('num is ' + typeof(num) +
  '\nobj is ' + typeof(obj) +
  '\nsymb is ' + typeof(symb) +
  '\nfunc is ' + typeof(func));
+ 
