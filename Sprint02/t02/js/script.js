@@ -26,7 +26,7 @@ if (animalName.length <= 20 && !animalName.includes(" ") && animalName !== "") {
           if (gender === "" && age >= 18) {
             status = "hero";
           }
-          let result = "The superhero name is: " + animalName.toLowerCase() + "-" + status + "!";
+          const result = "The superhero name is: " + animalName.toLowerCase() + "-" + status + "!";
           alert(result);
         } 
         else {
