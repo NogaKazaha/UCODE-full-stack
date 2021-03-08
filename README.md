@@ -27,7 +27,7 @@
         <tr>
             <th>Sprint01</th>
             <th>Get advanced skills in HTML and CSS (hovering, rotation, adaptive layouts, drop-down menus, filtering, etc.)</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint02</th>
