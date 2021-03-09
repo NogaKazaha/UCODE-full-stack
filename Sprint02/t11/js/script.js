@@ -25,7 +25,7 @@ function addWords(obj, wrds) {
 }
 function removeWords(obj, wrds) {
   let removeItem = Object.values(obj);
-  removeItem = String(removeItem);а
+  removeItem = String(removeItem);
   removeItem = removeItem.split(" ");
   removeItem = cleanArray(removeItem);
   let removed = cleanArray(wrds.split(" "));
