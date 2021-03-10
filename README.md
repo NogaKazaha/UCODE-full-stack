@@ -32,7 +32,7 @@
         <tr>
             <th>Sprint02</th>
             <th>Introduction to JavaScript. Basic functions (alert, prompt, console.log, etc.).</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint03</th>
