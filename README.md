@@ -37,7 +37,7 @@
         <tr>
             <th>Sprint03</th>
             <th>The OOP principles (encapsulation, polymorphism, and inheritance, etc.). Classes, methods, objects.</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint04</th>
