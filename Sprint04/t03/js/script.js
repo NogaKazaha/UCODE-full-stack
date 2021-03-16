@@ -1,41 +1,38 @@
 let position = 0;
-const imageContainer = document.getElementsByClassName("images")[0];
-let btnPrev = document.getElementsByClassName("prev")[0];
-let btnNext = document.getElementsByClassName("next")[0];
-let imgContainerWidth = imageContainer.clientWidth;
-window.addEventListener('resize', function(){ imgContainerWidth = imageContainer.clientWidth; });
-let timer = setInterval(function () { next(); }, 5000);
+const image = document.getElementsByClassName("images")[0];
+let image_width = image.clientWidth;
+window.addEventListener('resize', function(){ image_width = image.clientWidth; });
+let timer = setInterval(function () { next(); }, 3000);
 function next() {
-  if (position === imageContainer.children.length - 1) {
-    position = 0;
-    let imageBlock = document.getElementsByClassName("image")[position];
-    for (let i = 0; i < imageContainer.children.length; i++) {
-      let imageBlock = document.getElementsByClassName("image")[i];
-      imageBlock.style.transform = "translateX(" + 0 + "px)";
+  if (position === image.children.length - 1) {
+    let image_block = document.getElementsByClassName("image")[position];
+    for (let i = 0; i < image.children.length; i++) {
+      image_block = document.getElementsByClassName("image")[i];
+      image_block.style.transform = "translateX(" + 0 + "px)";
     }
-    imageBlock.style.transform ="translateX(" + imgContainerWidth * position + "px)";
+    image_block.style.transform ="translateX(" + image_width * position + "px)";
   } 
-  else if (0 <= position < imageContainer.children.length - 1) {
+  else if (0 <= position < image.children.length - 1) {
     position++;
-    let imageBlockPrev = document.getElementsByClassName("image")[position];
-    imageBlockPrev.style.transform ="translateX(-" + imgContainerWidth * position + "px)";
+    let image_block_prev = document.getElementsByClassName("image")[position];
+    image_block_prev.style.transform ="translateX(-" + image_width * position + "px)";
   }
   clearInterval(timer);
-  timer = setInterval(function () { next(); }, 5000);
+  timer = setInterval(function () { next(); }, 3000);
 }
 function prev() {
   if (position === 0) {
-    position = imageContainer.children.length - 1;
-    let imageBlock = document.getElementsByClassName("image")[position];
-    imageBlock.style.transform ="translateX(-" + imgContainerWidth * position + "px)";
+    position = image.children.length - 1;
+    let image_block = document.getElementsByClassName("image")[position];
+    image_block.style.transform ="translateX(-" + image_width * position + "px)";
   } 
-  else if (0 < position < imageContainer.children.length - 1) {
-    let imageBlock = document.getElementsByClassName("image")[position];
-    imageBlock.style.transform = "translateX(" + 0 + "px)";
+  else if (0 < position < image.children.length - 1) {
+    let image_block = document.getElementsByClassName("image")[position];
+    image_block.style.transform = "translateX(" + 0 + "px)";
     position--;
-    let imageBlockPrev = document.getElementsByClassName("image")[position];
-    imageBlockPrev.style.transform ="translateX(-" + imgContainerWidth * position + "px)";
+    let image_block_prev = document.getElementsByClassName("image")[position];
+    image_block_prev.style.transform ="translateX(-" + image_width * position + "px)";
   }
   clearInterval(timer);
-  timer = setInterval(function () { next(); }, 5000);
+  timer = setInterval(function () { next(); }, 3000);
 }
