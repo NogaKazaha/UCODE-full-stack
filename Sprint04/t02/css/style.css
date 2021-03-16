@@ -1,0 +1,34 @@
+body{
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+table{
+  text-align: center;
+  outline: 3px solid black;
+  margin: auto;
+  border-collapse: collapse;
+}
+th{
+  background-color: red;
+  padding: 10px;
+  width: 50px;
+  border: 1px solid white;
+  border: 1px solid white;  
+}
+tr{
+  border: 1px solid white;
+}
+td{
+  padding: 10px;
+  background-color: lightgrey;
+  border: 1px solid white;
+}
+.sort{
+  background-color: grey;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 21.440px;
+  right: 20px;
+}
