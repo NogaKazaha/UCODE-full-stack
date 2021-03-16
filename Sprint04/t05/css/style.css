@@ -1,56 +1,50 @@
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 #container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 .stones {
-  position: absolute;
   width: 100px;
   height: 100px;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
+  position: absolute;
 }
-.stones:hover {
-  filter: saturate(.5);
+.stones:nth-child(1) {
+  background-color: red;
+  top: 350px; 
+  left: 430px;
+}
+.stones:nth-child(2) {
+  background-color: blue;
+  top: 300px; 
+  left: 280px;
+}
+.stones:nth-child(3) {
+  background-color: lightgreen;
+  top: 230px; 
+  left: 160px;
+}
+.stones:nth-child(4) {
+  background-color: yellow;
+  top: 100px; 
+  left: 220px;
+}
+.stones:nth-child(5) {
+  background-color: orange;
+  top: 450px; 
+  left: 220px;
+}
+.stones:nth-child(6) {
+  background-color: darkorchid;
+  top: 200px; 
+  left: 400px;
 }
 .stones[value="off"] {
   border: 2px dashed #333;
 }
 .stones[value="off"]:hover {
   filter: none;
-}
-.stones:nth-child(1) {
-  background-color: red;
-  top: 200px; 
-  left: 170px;
-}
-.stones:nth-child(2) {
-  background-color: blue;
-  top: 100px; 
-  left: calc(165px * 2)
-}
-.stones:nth-child(3) {
-  background-color: green;
-  top: 200px; 
-  left: calc(165px * 3)
-}
-.stones:nth-child(4) {
-  background-color: yellow;
-  top: 100px; 
-  left: calc(165px * 4)
-}
-.stones:nth-child(5) {
-  background-color: orange;
-  top: 200px; 
-  left: calc(165px * 5)
-}
-.stones:nth-child(6) {
-  background-color: darkorchid;
-  top: 100px; 
-  left: calc(165px * 6)
 }
