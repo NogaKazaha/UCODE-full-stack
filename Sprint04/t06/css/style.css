@@ -1,0 +1,31 @@
+img {
+  margin-bottom: 10px;
+}
+h1 {
+  text-align: center;
+}
+.ammount {
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.ammount label {
+  background: red;
+  position: absolute;
+  padding: 10px;
+  border-radius: 30px;
+  right: 0;
+}
+label.finish {
+  background: lightgreen;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.images div {
+  display: flex;
+  margin-top: 10px;
+}
