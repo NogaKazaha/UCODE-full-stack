@@ -5,12 +5,13 @@ function moveStones() {
     offsetY: 0,
     target: null
   };
-  container.addEventListener('on_click', event => {
+  container.addEventListener('dblclick', event => {
     const new_target = event.target;
     if (new_target && new_target.classList.contains('stones')) {
       if (new_target.getAttribute('value') === 'on') {
         new_target.setAttribute('value', 'off');
-      } else {
+      } 
+      else {
         new_target.setAttribute('value', 'on');
       }
     }
