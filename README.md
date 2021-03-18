@@ -71,7 +71,7 @@
         </tr>
         <tr>
             <th>Race00</th>
-            <th>First MVC project (registration, login, password reminder forms, etc.)</th>
+            <th>Simple Calculator using actual standards of programming (HTML, CSS, and JavaScript).</th>
             <th></th>
         </tr>
         <tr>
