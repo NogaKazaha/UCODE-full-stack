@@ -41,7 +41,7 @@
         </tr>
         <tr>
             <th>Sprint04</th>
-            <th>Simple Calculator using actual standards of programming (HTML, CSS, and JavaScript).</th>
+            <th>Third-party API. DOM for accessing the HTML.</th>
             <th></th>
         </tr>
         <tr>
