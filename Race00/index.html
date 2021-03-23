@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <div class="floater">
+                    <p class="equation"></p>
+                    <p class="result">0</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="brow">
+                    <div class="button operation" onclick="switchModes()" id="modeswitch">💡</div>
+                    <div class="button memory" onclick="mrealoc()">MR</div>
+                    <div class="button memory" onclick="mclear()">MC</div>
+                    <div class="button memory" onclick="mminus()">M-</div>
+                    <div class="button memory" onclick="mplus()">M+</div>
+                </div>
+                <div class="brow">
+                    <div class="button operation" onclick="factorial()">x!</div>
+                    <div class="button reset" onclick="reset()">C</div>
+                    <div class="button operation" onclick="changeSign()">+/-</div>
+                    <div class="button operation" onclick="percent()">%</div>
+                    <div class="button operation" onclick="insert('÷')">÷</div>
+                </div>
+                <div class="brow">
+                    <div class="button operation" onclick="insert('^')"><div>X<sup>n</sup></div></div>
+                    <div class="button" onclick="insert(7)">7</div>
+                    <div class="button" onclick="insert(8)">8</div>
+                    <div class="button" onclick="insert(9)">9</div>
+                    <div class="button operation" onclick="insert('*')">*</div>
+                </div>
+                <div class="brow">
+                    <div class="button operation" onclick="insert('√')">√x</div>
+                    <div class="button" onclick="insert(4)">4</div>
+                    <div class="button" onclick="insert(5)">5</div>
+                    <div class="button" onclick="insert(6)">6</div>
+                    <div class="button operation" onclick="insert('+')">+</div>
+                </div>
+                <div class="brow">
+                    <div class="button operation" onclick="toggleConversion()">⇌</div>
+                    <div class="button" onclick="insert(1)">1</div>
+                    <div class="button" onclick="insert(2)">2</div>
+                    <div class="button" onclick="insert(3)">3</div>
+                    <div class="button operation" onclick="insert('-')">-</div>
+                </div>
+                <div class="brow">
+                    <div class="button operation" onclick="switchBase();" id='baseswitch'>DEC</div>
+                    <div class="button" onclick="insert(0)">0</div>
+                    <div class="button" onclick="insert('.')">.</div>
+                    <div class="button big eq" onclick="equal()">=</div>
+                </div>
+            </div>
+            <div class="conversion hide">
+                <br><br>
+                <select name="What to convert?" id="sl" onchange="changedSelect()">
+                    <option value="-1">None</option>
+                    <option value="0">Lenght</option>
+                    <option value="1">Weights and masses</option>
+                    <option value="2">Area</option>
+                </select>
+                <br><br>
+                <select id="originalsel" onchange="onWrite()"></select>
+                <br>
+                <input type="text" id="in" placeholder="Input original data" onkeypress="onWrite()" onkeyup="onWrite()">
+                <br><br>
+                <select id="outputsel" onchange="onWrite()"></select>
+                <br>
+                <input type="text" id="out" placeholder="0" disabled>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
