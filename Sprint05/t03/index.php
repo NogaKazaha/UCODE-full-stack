@@ -1,8 +1,5 @@
 <?php
   function firstUpper($str) {
-    if (!$str || $str == NULL) {
-      return "";
-    }
     $str = trim($str, " \n\r\t\v\0");
     $str = ucfirst(strtolower($str));
     return $str;
