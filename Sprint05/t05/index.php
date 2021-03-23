@@ -38,7 +38,7 @@
       return strrev($this->string);
     }
   }
-
+  /*
   function test($string) {
     $obj = new StrFrequency($string);
     $symbol = $obj->letterFrequencies();
@@ -60,4 +60,5 @@
   test("  Test test 123 45 !0 f   HeLlO wOrLd  ");
   echo "*************\n";
   test("");
+  */
 ?>
