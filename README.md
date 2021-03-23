@@ -42,7 +42,7 @@
         <tr>
             <th>Sprint04</th>
             <th>Third-party API. DOM for accessing the HTML.</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint05</th>
