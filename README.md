@@ -79,7 +79,6 @@
             <th>Card Game in battle variation.</th>
             <th></th>
         </tr>
-        <tr>
     </table>
 </body>
 
