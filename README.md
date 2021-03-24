@@ -72,14 +72,13 @@
         <tr>
             <th>Race00</th>
             <th>Simple Calculator using actual standards of programming (HTML, CSS, and JavaScript).</th>
-            <th></th>
+            <th>139</th>
         </tr>
         <tr>
             <th>Race01</th>
             <th>Card Game in battle variation.</th>
             <th></th>
         </tr>
-        <tr>
     </table>
 </body>
 
