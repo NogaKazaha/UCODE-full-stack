@@ -47,7 +47,7 @@
         <tr>
             <th>Sprint05</th>
             <th>Server-side programming: the basics of PHP.</th>
-            <th></th>
+            <th>99</th>
         </tr>
         <tr>
             <th>Sprint06</th>
