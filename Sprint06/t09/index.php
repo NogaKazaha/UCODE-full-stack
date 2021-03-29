@@ -22,8 +22,10 @@
             "description" => $_POST["about"],
             "photo" => $_POST["photo"]
           ];
-          if($arr["name"]) {    
+          if($arr["name"]) {  
+            echo "<pre>";
             print_r ($arr);
+            echo "</pre>";
           }
         ?>
     </div>
