@@ -52,7 +52,7 @@
         <tr>
             <th>Sprint06</th>
             <th>User data operation.</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint07</th>
