@@ -1,0 +1,23 @@
+.boxes {
+  border: 1px solid red;
+  background-color: rgb(19, 8, 37);
+  margin: 5px;
+  padding: 10px;
+}
+.text {
+  color: white;
+  margin-left: 10px;
+}
+.data {
+  border: 1px solid red;
+  background-color: rgb(65, 63, 63);
+  margin: 10px;
+  padding: 10px;
+}
+.key {
+  color: aqua;
+}
+.value {
+  color: darkgreen;
+}
+
