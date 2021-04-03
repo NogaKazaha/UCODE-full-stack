@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if (empty($_SESSION['count']) || !$_COOKIE['count']) {
+        $_SESSION['count'] = 1;
+        setcookie("count", $_SESSION['count'], time() + 60);
+    }
+    else {
+        $_SESSION['count']++;
+        setcookie("count", $_SESSION['count'], time() + 60);
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,15 +21,10 @@
             This page was loaded 
             <span>
                 <?php 
-                    session_start();
-                    if (empty($_SESSION['count']) || !$_COOKIE['count']) {
-                        $_SESSION['count'] = 1;
-                        setcookie("count", $_SESSION['count'], time() + 60);
-                        echo $_SESSION['count'];
+                    if(!$_COOKIE['count']) {
+                        echo 1;
                     } 
                     else { 
-                        $_SESSION['count']++;
-                        setcookie("count", $_SESSION['count'], time() + 60);
                         echo $_COOKIE['count']; 
                     } 
                 ?>

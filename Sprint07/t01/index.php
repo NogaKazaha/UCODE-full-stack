@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +11,6 @@
         <h1>Session for new</h1>
         <form action="index.php" method="post" style="border: 1px solid black; padding: 40px 20px 30px;"
             <?php 
-            session_start();
             if(isset($_POST['send'])) {
                 echo 'hidden';
             } 

@@ -16,16 +16,16 @@
         </form>
         <h2>List of files:</h2>
         <?php
+        function autoload($pClassName) {
+            include(__DIR__ . '/' . $pClassName . '.php');
+        }
+        spl_autoload_register("autoload");
         if ($_POST["delete"]) {
             unlink("tmp/" . $_GET["file"]);
             unset($_POST["delete"]);
             unset($_GET["file"]);
             echo '<script>window.location = window.location.href.split("?")[0];</script>';
         }
-        function autoload($pClassName) {
-            include(__DIR__ . '/' . $pClassName . '.php');
-        }
-        spl_autoload_register("autoload");
         if ($_POST && $_POST["file"]) {
             $file = new File("tmp/" . $_POST["file"]);
             $file->writeToList($_POST["content"]);

@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(isset($_POST['save'])) {
+        header('Refresh:0');
+    }
+    if(isset($_POST['clear'])) {
+        header('Refresh:0');
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,13 +16,6 @@
     <body>
         <h1>Password</h1>
         <?php
-            session_start();
-            if(isset($_POST['save'])) {
-                header('Refresh:0');
-            }
-            if(isset($_POST['clear'])) {
-                header('Refresh:0');
-            }
             if(isset($_POST['check']) && isset($_POST['password'])) {
                 if(crypt($_POST['password'], $_SESSION['salt']) == $_SESSION['hash']) {
                     echo '<p style="color: green;">Hacked!</p>';
