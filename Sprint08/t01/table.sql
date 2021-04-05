@@ -1,0 +1,9 @@
+USE ucode_web;
+CREATE TABLE heroes (
+  id INT AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  description VARCHAR(500) NOT NULL,
+  race VARCHAR(500) DEFAULT 'human' NOT NULL,
+  class_role ENUM('tankman', 'healer', 'dps') NOT NULL,
+  PRIMARY KEY(id)
+);
