@@ -6,7 +6,7 @@
         <a href="https://unitfactory.net/" target="_blank">
             <img src="https://github.com/NogaKazaha/NogaKazaha/blob/master/img/Header/unit.png" height="100px">
         </a>
-        <a href="https://lms.ucode.world/users/plitovka/" target="_blank">
+        <a href="https://lms.ucode.world/users/osavich/" target="_blank">
             <img src="https://github.com/NogaKazaha/NogaKazaha/blob/master/img/Header/lms.png" height="100px">
         </a>
     </p>
