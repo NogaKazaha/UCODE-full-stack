@@ -1,0 +1,27 @@
+div {
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.hint-text {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+input {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+button {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
