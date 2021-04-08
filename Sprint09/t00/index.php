@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="">
     <title>Registration</title>
     <link rel="stylesheet" href="style.css">
     <script src="checkPass.js"></script>

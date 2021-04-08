@@ -1,5 +1,5 @@
-CREATE database sword;
-CREATE USER osavich@localhost IDENTIFIED BY 'securepass';
+CREATE database sword; 
+CREATE USER osavich@localhost IDENTIFIED WITH mysql_default_pass BY securepass;
 GRANT ALL PRIVILEGES ON sword.* TO osavich@localhost;
 USE sword;
 create TABLE users (
