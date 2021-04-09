@@ -5,7 +5,7 @@ USE sword;
 CREATE TABLE IF NOT EXISTS sword.users (
   id INT NOT NULL AUTO_INCREMENT , 
   login VARCHAR(30) NOT NULL , 
-  password VARCHAR(30) NOT NULL , 
+  password VARCHAR(100) NOT NULL , 
   full_name VARCHAR(30) NOT NULL , 
   email VARCHAR(50) NOT NULL , 
   PRIMARY KEY (id),
