@@ -6,7 +6,7 @@
         public $email;
         public $admin;
         public function setConnection() {
-            $this->db_connection = new DatabaseConnection('127.0.0.1', null, "osavich", "", "sword");
+            $this->db_connection = new DatabaseConnection('127.0.0.1', null, "osavich", "securepass", "sword");
             $this->connection = $this->db_connection->connection;
         }
         public function __construct() {
