@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS sword.users (
   login VARCHAR(30) NOT NULL , 
   password VARCHAR(100) NOT NULL , 
   full_name VARCHAR(30) NOT NULL , 
-  email VARCHAR(50) NOT NULL , 
+  email VARCHAR(50) NOT NULL ,
+  admin ENUM('0', '1') NOT NULL DEFAULT '0',
   PRIMARY KEY (id),
   UNIQUE (login),
   UNIQUE (email) 
