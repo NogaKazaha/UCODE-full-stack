@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <title>Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Sign up</h1>
+        <form action="index.php" method="POST" id="reg">
+            <div>
+                <input type="text" name="login" required  placeholder="Login">
+            </div>
+            <div>
+                <input type="password" name="password" id="password" required placeholder="Password">
+            </div>
+            <div>
+                <input type="password" id="confirm" required placeholder="Confirm password">
+            </div>
+            <div>
+                <input type="text" name="full_name" required placeholder="Full name">
+            </div>
+            <div>
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+            <br>
+            <input type="submit" value="Sign up">
+        </form>
+    </body>
+</html>
