@@ -1,5 +1,5 @@
 <?php
-    class Model {
+    class Login {
         public $login;
         public $password;
         public $full_name;
