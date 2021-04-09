@@ -6,7 +6,7 @@
         public function __destruct(){
             $this->connection->close();
         }
-        public function getconnectionectionStatus() {
+        public function getConnectionStatus() {
             if($this->connection) {
               return true;
             } 
