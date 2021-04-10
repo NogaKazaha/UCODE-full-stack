@@ -57,12 +57,12 @@
         <tr>
             <th>Sprint07</th>
             <th>Webpage data operations (GET and POST methods, cookies, API).</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint08</th>
             <th>Operations with databases via SQL queries.</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Sprint09</th>
