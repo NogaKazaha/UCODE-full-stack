@@ -2,10 +2,8 @@
     session_start();
     require_once("connection/DatabaseConnection.php");
     require_once("models/Login.php");
-
     $login = null;
     $password = null;
-
     if (!$_POST) {
         if (!$_SESSION["login"]) {
             echo(file_get_contents("index.html"));
@@ -23,13 +21,13 @@
         session_destroy();
         die();
     }
-
     $Login = new Login();
-    if (!$login)
+    if (!$login) {
         $login = $_POST["login"];
-    if (!$password)
+    }
+    if (!$password) {
         $password = md5($_POST["password"]);
-
+    }
     if (!$Login->checkLogin($login, $password)) {
         echo(file_get_contents("index.html"));
         echo("<script>alert('Login or password is wrong!')</script>");
@@ -42,5 +40,5 @@
     "<br>Login: ".$Login->login.
     "<br>Full name: ".$Login->full_name.
     "<br>Email: ".$Login->email);
-    echo("<form action='index.php' method='POST'><input type='text' name='logout' value='1' style='display:none;'><input type='submit' value='Log out'></form>")
+    echo("<form action='index.php' method='POST'><input type='text' name='logout' value='1'><input type='submit' value='Log out'></form>")
 ?>

@@ -15,12 +15,17 @@
             $this->connection->query($sqlMainQuery);
             $this->connection->commit();
         }
-        public function checkLogin($login, $passwordHash=null) {
-            $query1 = "SELECT * FROM `users` WHERE `login`='".$this->connection->escape_string($login)."' AND `password`='$passwordHash'";
+        public function checkLogin($login, $pass=null) {
+            $query1 = "SELECT * FROM `users` WHERE `login`='".$this->connection->escape_string($login)."' AND `password`='$pass'";
             $query2 = "SELECT `id` FROM `users` WHERE `login`='".$this->connection->escape_string($login)."'";
-            $result = $this->connection->query($passwordHash ? $query1 : $query2);
+            if($pass) {
+                $result = $this->connection->query($query1);
+            }
+            else {
+                $result = $this->connection->query($query2);
+            }
             $result = $result->fetch_all()[0];
-            if ($passwordHash === null)
+            if ($pass === null)
                 if($result[0]) {
                     return true;
                 }
