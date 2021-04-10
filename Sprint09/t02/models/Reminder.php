@@ -15,7 +15,23 @@
             $this->connection->query($sqlMainQuery);
             $this->connection->commit();
         }
-        public function findId($id) {
+        public function checkEmail($email) {
+            $result = $this->connection->query("SELECT `id` FROM `users` WHERE `email`='$email'");
+            $result = $result->fetch_all();
+            if ($result)
+                return $result[0][0];
+            return null;
+        }
+        public function updateUser() {
+            $query = "UPDATE `users` SET login='".$this->connection->escape_string($this->login)."',
+            password='".$this->connection->escape_string($this->password)."', 
+            full_name='".$this->connection->escape_string($this->full_name)."',
+            email='".$this->connection->escape_string($this->email)."' 
+            WHERE id=$this->id";
+            $this->connection->query($query);
+            $this->connection->commit();
+        }
+        public function findById($id) {
             $result = $this->connection->query("SELECT * FROM `users` WHERE `id`=$id");
             $result = $result->fetch_all()[0];
             $this->id = $result[0];
@@ -29,22 +45,6 @@
             else {
                 $this->admin = false;
             }
-        }
-        public function findEmail($email) {
-            $result = $this->connection->query("SELECT `id` FROM `users` WHERE `email`='$email'");
-            $result = $result->fetch_all();
-            if ($result)
-                return $result[0][0];
-            return null;
-        }
-        public function update() {
-            $query = "UPDATE `users` SET login='".$this->connection->escape_string($this->login)."',
-            password='".$this->connection->escape_string($this->password)."', 
-            full_name='".$this->connection->escape_string($this->full_name)."',
-            email='".$this->connection->escape_string($this->email)."' 
-            WHERE id=$this->id";
-            $this->connection->query($query);
-            $this->connection->commit();
         }
     }
 ?>

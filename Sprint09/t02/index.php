@@ -1,16 +1,14 @@
 <?php
     require_once("connection/DatabaseConnection.php");
     require_once("models/Reminder.php");
-
     if (!$_POST) {
         echo(file_get_contents("index.html"));
         die();
     }
-
     $Reminder = new Reminder();
     $email = $_POST["email"];
 
-    $id = $Reminder->findEmail($email);
+    $id = $Reminder->checkEmail($email);
     if (!$id) {
         echo(file_get_contents("index.html"));
         echo("<script>alert('There is not such email in our DB!')</script>");
@@ -25,11 +23,11 @@
           $pass[] = $alphabet[$n];
       }
       return implode($pass);
-  }
-    $Reminder->findId($id);
+    }
+    $Reminder->findById($id);
     $newPass = randomPassword();
     $Reminder->password = md5($newPass);
-    $Reminder->update();
+    $Reminder->updateUser();
     echo("<script>alert('Email has been sent to your email!')</script>");
     mail($email, "Password reminder", "Your new password: \n".$newPass);
 ?>
