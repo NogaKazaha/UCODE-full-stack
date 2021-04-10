@@ -19,13 +19,25 @@
             $this->password = $password;
             $this->full_name = $full_name;
             $this->email = $email;
+            $query = "INSERT INTO `users` (login, password, full_name, email)
+            VALUES ('".$this->connection->escape_string($this->login)."',
+            '".$this->connection->escape_string($this->password)."', 
+            '".$this->connection->escape_string($this->full_name)."',
+            '".$this->connection->escape_string($this->email)."')";
+            $this->connection->query($query);
+            $this->connection->commit();
         }
-        public function findLogin($login, $passwordHash=null) {
-            $query1 = "SELECT * FROM `users` WHERE `login`='".$this->connection->escape_string($login)."' AND `password`='$passwordHash'";
+        public function checkLogin($login, $pass=null) {
+            $query1 = "SELECT * FROM `users` WHERE `login`='".$this->connection->escape_string($login)."' AND `password`='$pass'";
             $query2 = "SELECT `id` FROM `users` WHERE `login`='".$this->connection->escape_string($login)."'";
-            $result = $this->connection->query($passwordHash ? $query1 : $query2);
+            if($pass) {
+                $result = $this->connection->query($query1);
+            }
+            else {
+                $result = $this->connection->query($query2);
+            }
             $result = $result->fetch_all()[0];
-            if ($passwordHash === null)
+            if ($pass === null)
                 if($result[0] == 1) {
                     return true;
                 }
@@ -40,15 +52,6 @@
             $this->password = $result[2];
             $this->full_name = $result[3];
             $this->email = $result[4];
-        }
-        public function saveUser() {
-            $query = "INSERT INTO `users` (login, password, full_name, email)
-            VALUES ('".$this->connection->escape_string($this->login)."',
-            '".$this->connection->escape_string($this->password)."', 
-            '".$this->connection->escape_string($this->full_name)."',
-            '".$this->connection->escape_string($this->email)."')";
-            $this->connection->query($query);
-            $this->connection->commit();
         }
     }
 ?>
