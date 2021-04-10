@@ -1,0 +1,67 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bring them together!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="register">
+            <h1>Sign up</h1>
+            <form action="php/register.php" method="POST" onsubmit="checkPass()">
+                <div>
+                    <input type="text" name="login" required  placeholder="Login">
+                </div>
+                <div>
+                    <input type="text" name="full_name" required placeholder="Full name">
+                </div>
+                <div>
+                    <input type="email" name="email" required placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" required placeholder="Password">
+                </div>
+                <div>
+                    <input type="password" id="confirm" required placeholder="Confirm password">
+                </div>
+                <br>
+                <input type="submit" value="Sign up">
+            </form>
+            <div>
+                <button onclick="changePage('login')">Already have an account?</button>
+            </div>
+        </div>
+        <div class="login">
+            <h1>Sign in</h1>
+            <form action="php/login.php" method="POST">
+                <div>
+                    <input type="text" name="login" required placeholder="Login">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" required placeholder="Password">
+                </div>
+                <br>
+                <input type="submit" value="Sign in">
+            </form>
+            <div>
+                <button onclick="changePage('register')">Need an account?</button>
+                <button onclick="changePage('reminder')">Forgot password?</button>
+            </div>
+        </div>
+        <div class="reminder">
+            <h1>Remind password</h1>
+            <form action="php/reminder.php" method="POST" id="reg">
+                <div>
+                    <input type="email" name="email" required placeholder="Email">
+                </div>
+                <br>
+                <input type="submit" value="I forgon my password">
+            </form>
+            <div>
+                <button onclick="changePage('login')">Back</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
