@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Bring them together!</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="register">
             <h1>Sign up</h1>
-            <form action="php/register.php" method="POST" onsubmit="checkPass()">
+            <form action="register.php" method="POST" onsubmit="checkPass()">
                 <div>
                     <input type="text" name="login" required  placeholder="Login">
                 </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="login">
             <h1>Sign in</h1>
-            <form action="php/login.php" method="POST">
+            <form action="login.php" method="POST">
                 <div>
                     <input type="text" name="login" required placeholder="Login">
                 </div>
@@ -51,7 +51,7 @@
         </div>
         <div class="reminder">
             <h1>Remind password</h1>
-            <form action="php/reminder.php" method="POST" id="reg">
+            <form action="reminder.php" method="POST">
                 <div>
                     <input type="email" name="email" required placeholder="Email">
                 </div>

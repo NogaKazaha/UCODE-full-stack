@@ -1,7 +1,7 @@
 <?php
     session_start();
-    require_once("../connection/DatabaseConnection.php");
-    require_once("../models/Model.php");
+    require_once("connection/DatabaseConnection.php");
+    require_once("models/Model.php");
     $login = null;
     $password = null;
     if (!$_POST) {
@@ -40,5 +40,5 @@
     "<br>Login: ".$Login->login.
     "<br>Full name: ".$Login->full_name.
     "<br>Email: ".$Login->email);
-    echo("<form action='index.php' method='POST'><input type='text' name='logout' value='1'><input type='submit' value='Log out'></form>")
+    echo("<form action='login.php' method='POST'><input type='text' name='logout' value='1' style='display:none;'><input type='submit' value='Log out'></form>")
 ?>

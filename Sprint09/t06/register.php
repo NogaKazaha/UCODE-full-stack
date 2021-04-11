@@ -1,6 +1,6 @@
 <?php
-    require_once("../connection/DatabaseConnection.php");
-    require_once("../models/Model.php");
+    require_once("connection/DatabaseConnection.php");
+    require_once("models/Model.php");
     echo(file_get_contents("index.html"));
     if (!$_POST)
         die();

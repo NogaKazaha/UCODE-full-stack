@@ -40,5 +40,5 @@
     "<br>Login: ".$Login->login.
     "<br>Full name: ".$Login->full_name.
     "<br>Email: ".$Login->email);
-    echo("<form action='index.php' method='POST'><input type='text' name='logout' value='1'><input type='submit' value='Log out'></form>")
+    echo("<form action='index.php' method='POST'><input type='text' name='logout' value='1' style='display:none;'><input type='submit' value='Log out'></form>")
 ?>

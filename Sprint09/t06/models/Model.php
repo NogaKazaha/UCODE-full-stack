@@ -6,7 +6,7 @@
         public $email;
         public $admin;
         public function setConnection() {
-            $this->db_connection = new DatabaseConnection('127.0.0.1', null, "osavich", "securepass", "sword");
+            $this->db_connection = new DatabaseConnection('127.0.0.1', null, "osavich", "", "sword");
             $this->connection = $this->db_connection->connection;
         }
         public function __construct() {
@@ -53,6 +53,13 @@
             $this->password = $result[2];
             $this->full_name = $result[3];
             $this->email = $result[4];
+            if($result[5] == '1') {
+                $this->admin = true;
+            }
+            else {
+                $this->admin = false;
+            }
+            return true;
         }
         public function checkEmail($email) {
             $result = $this->connection->query("SELECT `id` FROM `users` WHERE `email`='$email'");
