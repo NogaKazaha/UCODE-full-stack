@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/battle.css" type="text/css">
+    <script src="js/logger.js" type="module"></script>
+    <script src="js/battle.js" type="module" defer></script>
+</head>
+<body>
+    
+    <div class="credentials enemy">
+        <img src="/images/join-logo.png" class="avatar enemy">
+        <span class="login enemy"></span>
+    </div>
+    <div class="credentials self">
+        <img src="/images/join-logo.png" class="avatar self">
+        <span class="login self"></span>
+    </div>
+    <div class="container supper-huge">
+        <div class="section enemy">
+            <div class="info enemy">
+                <div class="hand enemy"></div>
+                <div class="hero enemy">
+                    <img src="/images/cards/thanos.jpg" class="hero-portrait enemy">
+                    <span class="hero-health drop hp">
+                        <span class="health self">
+                            20
+                        </span>
+                    </span>
+                </div>
+                <div class="stones enemy"></div>
+            </div>
+            <div class="board enemy"> 
+                <div class="cards enemy"></div>
+                <img src="/images/deck.png" class="deck enemy">
+            </div>
+        </div>
+        <div class="rope">
+            <span class="timer">
+                30
+            </span>
+            <input type="button" value="End turn" class="end-turn">
+        </div>
+        <div class="section self">
+            <div class="board self"> 
+                <div class="cards self"></div>
+                <img src="/images/deck.png" class="deck enemy">
+            </div>
+            <div class="info self">
+                <div class="hand self"></div>
+                <div class="hero self">
+                    <img src="/images/cards/thanos.jpg" class="hero-portrait self">
+                    <span class="hero-health drop hp">
+                        <span class="health self">
+                            20
+                        </span>
+                    </span>
+                </div>
+                <div class="stones self"></div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box">
+        <div class="container small">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+.credentials {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    left: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.credentials .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffb700;
+    padding: 5px;
+}
+
+.credentials.enemy {
+    top: 5px;
+}
+
+.credentials.self {
+    bottom: 5px;
+}
+
+.credentials .login {
+    display: block;
+    margin-left: 5px;
+}
+
+.section {
+    /* background-color: rgba(255, 0, 0, 0.322); */
+    width: 100%;
+    height: calc(47.5% - 10px);
+}
+
+
+.info {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    height: calc(45% - 10px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.board {
+    height: 55%;
+    justify-content: space-evenly;    
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    position: relative;
+}
+
+.deck {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 160px;
+    border-radius: 5px;
+}
+
+.rope {
+    height: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    width: calc(var(--width) * 1%);
+    align-self: flex-end;
+    display: flex;
+    --width: 100;
+    min-width: 200px;
+    transition: width 1s linear;
+}
+
+.rope .timer,
+.rope .end-turn {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+    height: calc(100% - 10px);
+    width: fit-content;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rope .timer {
+    font-size: 24px;
+}
+
+.rope .end-turn {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.hero {
+    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+
+.hero-portrait {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2.5px grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.drop {
+    box-shadow: 0 0 5px 2.5px grey;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 10;
+}
+
+.drop.hp {
+    background-color: red;
+    right: -10px;
+}
+
+.drop.at {
+    background-color: #ffb700;
+    left: -10px;
+}
+
+.drop.hero-health {
+    left: calc(50% + 65px);
+    bottom: 5%;
+}
+
+.health,
+.attack {
+    transform: rotate(-45deg);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.stones,
+.hand {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(1, 60px);
+    grid-template-columns: repeat(6, 60px);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+}
+
+.stones {
+    right: 10px;
+}
+
+.hand {
+    left: 10px;
+    grid-template-rows: repeat(1, 110px);
+    grid-template-columns: repeat(6, 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.hand.enemy {
+    top: 10px;
+}
+
+.hand.self {
+    bottom: 10px;
+}
+
+.hand img {
+    width: calc(100% - 5px);
+    border-radius: 5px;
+}
+
+.hand.self .self-card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.hand.self .self-card-box .card-info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+.stones.enemy {
+    top: 10px;
+}
+
+.stones.self {
+    bottom: 10px;
+}
+
+.stone {
+    width: 60px;
+    height: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 35%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 5px 2.5px grey;
+}
+
+.active {
+    box-shadow: 0 0 7.5px 5px royalblue;
+    border-radius: 35%;
+}
+
+.message-box {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.75);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container.small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.controller {
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: #0c1e39;
+    font-size: 16px;
+    cursor: pointer;
+}

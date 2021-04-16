@@ -1,0 +1,111 @@
+h1 {
+    text-align: center;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.grid-item {
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.drop {
+    box-shadow: 0 0 5px 2.5px grey;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.drop.hp {
+    background-color: red;
+    right: 0px;
+}
+
+.drop.at {
+    background-color: #ffb700;
+    left: 0px;
+}
+
+.drop.pr {
+    background-color: rgb(49, 49, 182);
+    right: 0px;
+    top: 0px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    margin: 0 15px;
+}
+
+.card img {
+    border-radius: 35%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 5px 2.5px grey;
+}
+
+.card:hover img{
+    border-radius: 35%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 5px 2.5px purple;
+}
+
+.health, .attack, .price{
+    transform: rotate(-45deg);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.drop.hp:hover {
+    box-shadow: 0 0 5px 2.5px red;
+}
+
+.drop.at:hover {
+    box-shadow: 0 0 5px 2.5px #ffb700;
+}
+
+.drop.pr:hover {
+    box-shadow: 0 0 5px 2.5px rgb(49, 49, 182);
+}
+
+.name {
+    font-size: 20px;
+}
+
+.control-panel {
+    text-align: center;
+    justify-content: center;
+}
+
+.control-panel .controller {
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: #0c1e39;
+    font-size: 16px;
+    cursor: pointer;
+}
