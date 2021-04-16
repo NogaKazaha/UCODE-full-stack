@@ -67,7 +67,7 @@
         <tr>
             <th>Sprint09</th>
             <th>First MVC project (registration, login, password reminder forms, etc.)</th>
-            <th></th>
+            <th>100</th>
         </tr>
         <tr>
             <th>Race00</th>
