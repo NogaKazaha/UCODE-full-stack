@@ -77,7 +77,7 @@
         <tr>
             <th>Race01</th>
             <th>Card Game in battle variation.</th>
-            <th></th>
+            <th>140</th>
         </tr>
     </table>
 </body>
